@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Fomularios</h1>
+            <form name="form1">
+                <label for="texto">Texto:</label>
+                <input type="text" value="teste" name="texto" id="textoId" disabled>
+                <br><br>
+                <label for="senha">senha:</label>
+                <input type="password" name="senha"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="email@gmail.con"><br><br>
+                <label for="numero">Numero:</label>
+                <input type="number" name="numero"><br><br>
+                <hr>
+                <label for="checkbox">selecao multipla:</label><br>
+                <input type="checkbox" name="checkbox" value="opcao1"> opcao 1 <br>
+                <input type="checkbox" name="checkbox" value="opcao2"> opcao 2 <br>
+                <input type="checkbox" name="checkbox" value="opcao3"> opcao 3 <br>
+                <hr>
+                <label for="selecao">Selecao unica</label><br>
+                <input type="radio" name="selecao" value="opcao1"> opcao 1 <br>
+                <input type="radio" name="selecao" value="opcao2"> opcao 2 <br>
+                <input type="radio" name="selecao" value="opcao3"> opcao 3 <br>
+                <hr>
+                <label for="data">Data:</label>
+                <input type="date" name="data"><br><br>
+                <label for="datahora">Data e hora:</label>
+                <input type="datetime-local" name="datahora"><br><br>
+                <label for="hora">Hora:</label>
+                <input type="time" name="hora"><br><br>
+                <hr>
+                <label for="selecionar">Selecionar:</label>
+                <select name="selecionar">
+                    <option value="opcao1">opcao 1</option>
+                    <option value="opcao2">opcao 2</option>
+                    <option value="opcao3">opcao 3</option>
+                </select><br><br>
+                <label for="area">Area:</label>
+                <textarea name="area" cols="30" rows="10"></textarea>
+                <hr>
+                <input type="submit"><br>
+                <input type="submit" value="Salvar">
+                <input type="reset"><br>
+            </form>
+            <a href="#" onclick="alert('Funcao chata')">alerta</a>
+        </section>
+        <br><br><br><br><br>
+        <input type="button" value="Alerta" form="form1" onclick="alert('Funcao chata')">
+        <br><br><br><br><br>
+    </main>
+    
+</body>
+</html>
