@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        ul{
+            list-style:none;
+            padding: 0px;
+        }
+        li{
+            float:left;
+            padding: 10px;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th,td{
+            border: 1px solid #123;
+            text-align: center;
+            padding: 10px;
+        }
+        th{
+            background-color: #123;
+            color:aliceblue
+        }
+        div{
+            background-color: chocolate;
+            padding: 10px;
+            margin: 50px;
+        }
+        footer{
+            text-align: center;
+        }
+    </style>
+    <title>exe 4</title>
+</head>
+<body>
+    <header>
+        <h1>Cadastro e listagem de Pontos</h1>
+    </header>
+    <main>
+        <section>
+            <hr>
+            <form>
+                <label for="motivo">Motivo:</label>
+                <input type="text" name="motivo" id="motivo">
+                <label for="data">Data:</label>
+                <input type="date" name="data" id="data">
+                <label for="tipo">Tipo:</label>
+                <select name="tipo" id="tipo">
+                    <option value="entrada"></option>
+                    <option value="saida"></option>
+                </select>
+                <input type="submit" value="registrar ponto">
+            </form>
+            <hr>
+        </section>
+        <section>
+            <ul>
+                <li><b>Nome:</b>Jose da silva</li>
+                <li><b>Cargo:</b>Portaria</li>
+            </ul>
+            <table>
+                <thead>
+                    <caption>Registro de ponto</caption>
+                    <tr>
+                        <th>Data</th>
+                        <th>Entrada</th>
+                        <th>Saida</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">entrada</td>
+                        <td>saida</td>
+                        <td>saida</td>
+                    </tr>
+                    <tr>
+                        <td>entrada</td>
+                        <td>saida</td>
+                    </tr>
+                    <tr>
+                        <td >entrada</td>
+                        <td colspan="2">saida</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">entrada</td>
+                        <td>saida</td>
+                        <td>saida</td>
+                    </tr>
+                    <tr>
+                        <td>entrada</td>
+                        <td>saida</td>
+                    </tr>
+                    <tr>
+                        <td >entrada</td>
+                        <td colspan="2">saida</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">entrada</td>
+                        <td>saida</td>
+                        <td>saida</td>
+                    </tr>
+                    <tr>
+                        <td>entrada</td>
+                        <td>saida</td>
+                    </tr>
+                    <tr>
+                        <td >entrada</td>
+                        <td colspan="2">saida</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;2023</p>
+    </footer>
+</body>
+</html>
