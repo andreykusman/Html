@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula display</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main id="container">
+        <section>
+            <h1>Aula Display</h1>
+            <div class="Block">
+                <h2>Conteudo Display Block</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, quae dolorum adipisci 
+                    nemo nesciunt exercitationem est explicabo minus delectus eligendi 
+                    possimus saepe totam non consequuntur officiis odio laudantium soluta necessitatibus.</p>
+                    
+                </div>
+            <span class="Azul Diplay">Display Block</span>
+            <div>
+                <h2>Diplay inline</h2>
+                <div class="Inline">Display Inline</div>
+                <div class="Inline">Display Inline</div>
+                <div class="Inline">Display Inline</div>
+                <div class="Inline">Display Inline</div>
+            </div>
+            <br>
+            <div class="">
+                <h2>Display Inline-Block</h2>
+                <div class="inline-block">Display<br> Inline-Block</div>
+                <div class="inline-block">Display<br> Inline-Block</div>
+                <div class="inline-block">Display<br> Inline-Block</div>
+                <div class="inline-block">Display<br> Inline-Block</div>
+
+            </div>
+            <div id="mostrar" class="none">
+                <h2>Diplay None</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam molestiae reprehenderit quo laboriosam doloremque quasi,
+                     ratione hic optio, a quos libero totam aspernatur possimus repudiandae iure officia odit repellat id.</p>
+                     <ul>
+                        <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                        <li>Elemento 3</li>
+                    </ul>
+            </div>
+            <form>
+                <label for="mostrar">Mostrar:</label>
+                <input type="radio" name="exibir" id="mostrar "
+                onclick ="document.getElementById('mostrar').classList.remove('none')">
+                <label for="Nmostrar">Nao mostrar</label>
+                <input type="radio" name="exibir" id="Nmostrar" 
+                onclick="document.getElementById('mostrar').classList.add('none')">
+            </form>
+        </section>
+    </main>
+    <br><br><br><br><br>
+    
+</body>
+</html>

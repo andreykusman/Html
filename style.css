@@ -1,0 +1,59 @@
+body{
+    background-color: #eee;
+    font-family: 'Courier New', Courier, monospace;
+}
+h1,h2{
+    color: white;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0,0.4);
+
+}
+#container{
+    display: block;
+    background-color:rgb(171, 182, 140) ;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 5px 5px 5px rgba(0,0,0,3);
+    border-radius: 10px;
+}
+.Block{
+    display: block;
+    background-color: antiquewhite;
+    padding: 1opx;
+}
+.Azul{
+    background-color: aquamarine !important;
+}
+.Inline{
+    display: inline;
+    background-color: rgb(24, 66, 33);
+    padding: 5px;
+    margin: 10px;
+}
+.font{
+    font-size: 0px;
+}
+.font h2{
+    font-size:26px ;
+
+}
+.inline-block{
+    background-color: bisque;
+    text-align: center;
+    display: inline-block;
+    padding: 30px 10px;
+    font-size: 10px;
+    width: calc(25% - 50px);
+    /*padding-top: 20px;
+    padding-bottom: 30px;
+    padding-right: 50px;*/
+}
+.none{
+   display: none;
+}
+#mostrar{
+    background-color: #ddd;
+    padding: 10px;
+}
+ul{
+    list-style-image: url(./certo.jpg);
+}
