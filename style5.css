@@ -1,40 +1,48 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0px;
-    padding: 0px;
+/* Estilos gerais para o corpo do documento */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Escolha da fonte para o corpo */
+    margin: 0px; /* Margem zero para o corpo */
+    padding: 0px; /* Preenchimento zero para o corpo */
+}
 
+/* Estilos para a seção principal usando flexbox */
+main {
+    display: flex; /* Exibição flexível para a seção principal */
+    flex-direction: row; /* Itens dispostos em linha (horizontal) */
+    justify-content: flex-end; /* Alinhamento dos itens à direita */
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se necessário */
+    align-items: flex-start; /* Alinhamento dos itens no início (superior) */
 }
-main{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    align-items: flex-start;
+
+/* Estilos para os itens dentro da seção principal */
+.item {
+    background-color: rgb(23, 131, 224); /* Cor de fundo azul */
+    color: white; /* Cor do texto branca */
+    padding: 50px 20px; /* Preenchimento interno de 50px no topo/fundo e 20px nos lados */
+    text-align: center; /* Alinhamento centralizado do texto */
+    flex-basis: 200px; /* Base flexível de 200px para a largura inicial */
+    margin: 5px; /* Margem entre os itens */
+    flex-grow: 1; /* Define a capacidade de crescimento igual para todos os itens */
 }
-.item{
-    background-color: rgb(23, 131, 224);
-    color: white;
-    padding:  50px 20px;
-    text-align: center;
-    flex-basis: 200px;
-    margin: 5px;
-    flex-grow: 1;
+
+/* Estilos para um item específico com crescimento dobrado */
+.grow-2 {
+    flex-grow: 2; /* Crescimento dobrado para esse item específico */
 }
-.grow-2{
-    /*padding: 100px 20px;
-    height: 200px;*/
-    flex-grow: 2;
+
+/* Estilos para uma lista com flexbox */
+ul {
+    align-items: center; /* Alinhamento dos itens ao centro */
+    display: flex; /* Exibição flexível para a lista */
+    margin: 0; /* Margem zero para a lista */
+    height: 50px; /* Altura da lista */
+    font-weight: bold; /* Peso da fonte em negrito */
+    background-image: linear-gradient(to bottom, #20abc4, #2059c4); /* Gradiente de fundo */
 }
-ul{
-    align-items: center;
-    display: flex;
-    margin: 0;
-    height: 50px;
-    font-weight: bold;
-    background-image: linear-gradient(to bottom, #20abc4, #2059c4);
-}
-li{
-    display: inline-block;
-    color:aquamarine;
-    padding: 0px 10px;
+
+/* Estilos para os itens da lista */
+li {
+    display: inline-block; /* Exibição em bloco em linha para os itens da lista */
+    color: aquamarine; /* Cor do texto aquamarine */
+    padding: 0px 10px; /* Preenchimento interno de 0px nas laterais e 10px no topo/fundo */
 }
