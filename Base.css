@@ -1,0 +1,112 @@
+/* Estilos gerais para o corpo do documento */
+body {
+    background-image: url('./images/papel2.jpg'); /* Imagem de fundo */
+    font-family: Arial, Helvetica, sans-serif; /* Família de fontes */
+    margin: 0px; /* Margem zero para o corpo */
+    padding: 0px; /* Preenchimento zero para o corpo */
+    display: grid; /* Usar layout de grade */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Colunas da grade, responsivas */
+    grid-template-rows: 150px auto 110px; /* Linhas da grade com alturas específicas */
+    grid-template-areas: "header header header" " main main main" "footer footer footer"; /* Áreas nomeadas na grade */
+}
+
+/* Estilos para a seção do cabeçalho */
+header {
+    grid-area: header; /* Área da grade ocupada pelo cabeçalho */
+    display: flex; /* Usar modelo flexível para o cabeçalho */
+    align-items: center; /* Centralizar itens verticalmente */
+    margin: 20px; /* Margem externa de 20 pixels */
+    justify-content: space-between; /* Espaço uniformemente entre os elementos do cabeçalho */
+    background-color: rgb(52, 52, 54); /* Cor de fundo do cabeçalho */
+    box-shadow: 5px 5px 3px rgba(134, 14, 201, 0.3); /* Sombra da caixa com efeito */
+    border-radius: 10px; /* Raio de borda para cantos arredondados */
+}
+
+/* Estilos para o texto do cabeçalho (h1) */
+header h1 {
+    margin-left: 70px; /* Margem à esquerda de 70 pixels para o título do cabeçalho */
+    color: white; /* Cor do texto branco */
+    text-shadow: 5px 5px 3px rgba(134, 14, 201, 0.5); /* Sombra do texto */
+}
+
+/* Estilos para links no cabeçalho ao passar o mouse */
+header a:hover {
+    border: solid rgb(134, 14, 201); /* Borda sólida com cor específica */
+    transition: 0.3s all; /* Transição suave de 0.3 segundos para todas as propriedades */
+    border-radius: 5px; /* Raio de borda para cantos arredondados na transição */
+}
+
+/* Estilos para elementos de navegação no cabeçalho */
+header nav, ul, li {
+    display: inline-block; /* Exibir como bloco em linha */
+    padding: 25px; /* Preenchimento de 25 pixels */
+    list-style: none; /* Remover estilo padrão de lista */
+    font-weight: bold; /* Peso da fonte em negrito */
+}
+
+/* Estilos para links dentro do cabeçalho */
+header nav, ul, li, a {
+    color: rgb(255, 255, 255); /* Cor do texto branca */
+    text-decoration: none; /* Remover decoração de texto sublinhado */
+    margin-right: 5px; /* Margem à direita de 5 pixels */
+}
+
+/* Estilos para a área de conteúdo principal */
+main {
+    grid-area: main; /* Área da grade ocupada pelo conteúdo principal */
+    display: flex; /* Usar modelo flexível para o conteúdo principal */
+    align-items: center; /* Centralizar itens verticalmente */
+    justify-content: center; /* Centralizar itens horizontalmente */
+    padding: 5px; /* Preenchimento interno de 5 pixels */
+}
+
+/* Estilos para a seção do rodapé */
+footer {
+    grid-area: footer; /* Área da grade ocupada pelo rodapé */
+    display: flex; /* Usar modelo flexível para o rodapé */
+    align-items: center; /* Centralizar itens verticalmente */
+    justify-content: center; /* Centralizar itens horizontalmente */
+    margin: 15px; /* Margem externa de 15 pixels */
+    background-color: rgb(52, 52, 54); /* Cor de fundo do rodapé */
+    box-shadow: 5px 5px 3px rgba(134, 14, 201, 0.3); /* Sombra da caixa com efeito */
+    border-radius: 10px; /* Raio de borda para cantos arredondados */
+    position: relative; /* Posição relativa para alinhar ao rodapé */
+    bottom: 0; /* Alinhar ao fundo da grade */
+    width: calc(100% - 40px); /* Largura total com margens laterais de 20 pixels */
+    height: 110px; /* Altura fixa de 110 pixels */
+}
+
+/* Estilos para itens de lista no rodapé */
+footer li {
+    color: rgb(255, 255, 255); /* Cor do texto branca */
+    display: inline-block; /* Exibir como bloco em linha */
+    list-style: none; /* Remover estilo padrão de lista */
+    text-decoration: none; /* Remover decoração de texto sublinhado */
+    text-align: center; /* Centralizar texto */
+    padding: 2px; /* Preenchimento interno de 2 pixels */
+}
+
+/* Consulta de mídia para telas com largura máxima de 1100px */
+@media (max-width: 1100px) {
+    header {
+        justify-content: none; /* Remover justificação no cabeçalho */
+        font-size: 70%; /* Reduzir tamanho da fonte para 70% */
+    }
+    header nav, ul, li {
+        display: flex; /* Usar modelo flexível para elementos de navegação no cabeçalho */
+    }
+}
+
+/* Consulta de mídia para telas com largura máxima de 412px */
+@media (max-width: 412px) {
+    header {
+        grid-area: header; /* Área da grade ocupada pelo cabeçalho */
+        flex-direction: column; /* Dispor elementos em coluna */
+        display: block; /* Exibir como bloco */
+        align-items: none; /* Remover alinhamento de itens */
+        font-size: 50%; /* Reduzir tamanho da fonte para 50% */
+    }
+    header nav, ul, li {
+        display: flex; /* Usar modelo flexível para elementos de navegação no cabeçalho */
+    }
+}
